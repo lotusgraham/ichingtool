@@ -41,7 +41,7 @@ function Iching(){
       value: null,
       element: $('#line6')
     },
-  }
+  };
 
   this.templates = [
     [//twobrokenlines
@@ -78,7 +78,7 @@ function Iching(){
       '<div class="changingdot"></div>',
       '<div class="lines right"></div>',
     ].join('\n'),
-  ]
+  ];
 
 }
 
@@ -95,7 +95,7 @@ Iching.prototype.onButtonClick = function(){
   line.value = num;
 
   this.counter--;
-}
+};
 
 Iching.prototype.onResetClick = function(){
   this.counter = 6;
@@ -105,15 +105,15 @@ Iching.prototype.onResetClick = function(){
     this.lines[i].element.empty();
     this.lines[i].value = null;
   }
-}
+};
 
 Iching.prototype.generateLine = function(){
 
-}
+};
 
 Iching.prototype.generateNumber = function(){
   return Math.floor(Math.random() * 4);
-}
+};
 
 
 

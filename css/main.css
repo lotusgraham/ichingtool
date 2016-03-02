@@ -1,28 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+
 header {
 padding:0;
 margin:0;
 border:0;
-background-color:purple;
+background-color:brown;
 height: 4rem;
-width: 100%
+width: 100%;
+margin-bottom: 10rem;
+}
+
+h1{
+  margin:0 auto;
+  font-family: 'Kaushan Script';
+  text-align: center;
+  position: fixed;
+  color:white;
+  font-size:3rem;
+}
+
+body{
+  background: url(../images/bg.jpg) no-repeat center center fixed;
 }
 
 div.hexblock{
+  border-radius: 1rem;
     display: block;
     text-align: center;
-    margin: 10rem auto;
+    margin: 0 auto;
     width: 700;
     max-width: 700px;
     border: 3px solid white;
     line-height: 5;
     background-color: white;
+    margin-bottom: 1rem;
 }
 
 div.changingdot{
   height: 2rem;
   float: left;
 display: block;
-width: 4%;
+width: 5%;
 background-color: gray;
 margin: 0 7%;
 height: 2rem;
@@ -33,7 +51,7 @@ div.changingdot-hidden{
   height: 2rem;
   float: left;
 display: block;
-width: 4%;
+width: 5%;
 background-color: white;
 margin: 0 7%;
 height: 2rem;
@@ -65,11 +83,16 @@ li{
 }
 
 button{
+  border-radius: 1rem;
   text-transform: center;
   display: block;
-  margin:0 auto;
+  margin:1rem auto;
   background-color: gray;
 color: whitesmoke;
+padding:1rem;
+}
+#resetbutton{
+  margin-bottom: 9rem;
 }
 
 .twosolidlines > div.lines {
@@ -88,7 +111,7 @@ color: whitesmoke;
   width: 40%;
   border-radius: 25px;
   margin: auto;
-  margin-right:1%;
+  margin-right:0;
 }
 
 .left{
@@ -98,7 +121,7 @@ color: whitesmoke;
   width: 40%;
   border-radius: 25px;
   margin: auto;
-  margin-right:1%;
+  margin-right:0;
 }
 
 .right{
@@ -108,7 +131,7 @@ color: whitesmoke;
   width: 40%;
   border-radius: 25px;
   margin: auto;
-  margin-left: 1%;
+  margin-left: 0;
 
 }
 

@@ -87,7 +87,7 @@ Iching.prototype.onButtonClick = function(){
   if(this.counter < 1) return; // reading complete
 
   var num = this.generateNumber();
-
+  console.log(num);
 
   var line = this.lines['line' + this.counter];
 

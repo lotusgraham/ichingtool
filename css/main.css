@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Open+Sans+Condensed:300);
 
 header {
 padding:0;
@@ -10,6 +10,7 @@ width: 100%;
 margin-bottom: 10rem;
 }
 
+
 h1{
   margin:0 auto;
   font-family: 'Kaushan Script';
@@ -19,8 +20,56 @@ h1{
   font-size:3rem;
 }
 
+#overlay {
+  display: none;
+  background-color: brown;
+  width: 80%;
+  height: 80%;
+  z-index: 5;
+  position: absolute;
+  margin:-8rem 10%;
+  opacity:.99;
+
+}
+
+#overlay > h1{
+  text-align: center;
+  position: absolute;
+display: block;
+margin-top: 2rem;
+margin-left: 20%;
+}
+
+#overlay > h3{
+  text-align: justify;
+  position: absolute;
+  font-family: 'Open Sans';
+display: block;
+margin-top: 20%;
+margin-left: 30%;
+margin-right: 10%;
+color:white;
+}
+
+#overlay > p {
+  position: absolute;
+display: block;
+margin-top: 1rem;
+margin-left: 65%;
+font-family: 'Kaushan Script';
+color:white;
+font-size: 10rem;
+opacity:.2;
+}
+
 body{
   background: url(../images/bg.jpg) no-repeat center center fixed;
+}
+#overlayclose{
+  position:absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
 }
 
 div.hexblock{

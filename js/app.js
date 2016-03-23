@@ -54,30 +54,37 @@ function Iching(){
   this.templates = [
     //twoSolidLines:
      [
+      //  '<div id="faders">',
       '<div class="lines"></div>',
       '<div class="changingdot-hidden"></div>',
       '<div class="lines"></div>',
+      // '</div>',
     ].join('\n'),
 
   //  solidLeftBrokenRight:
     [
+    // '<div id="faders">',
     '  <div class="lines left"></div>',
     '<div class="changingdot"></div>',
     '<div class="lines right">',
         '<div class="linebreak"></div>',
       '</div>',
+      // '</div>',
     ].join('\n'),
 
   //  brokenLeftSolidRight:
     [
+      // '<div id="faders">',
       '<div class="lines left">',
         '<div class="linebreak"></div>',
       '</div>',
       '<div class="changingdot"></div>',
       '<div class="lines right"></div>',
+      // '</div>',
     ].join('\n'),
 
     [//twobrokenlines
+      // '<div id="faders">',
       '<div class="lines">',
       '<div class="linebreak"></div>',
       '</div>',
@@ -85,6 +92,7 @@ function Iching(){
       '<div class="lines">',
       '<div class="linebreak"></div>',
       '</div>',
+      // '</div>',
     ].join('\n'),
 
   ];
@@ -112,7 +120,7 @@ Iching.prototype.onButtonClick = function(){
     var fortuneWeUse = findSymbol(newHexCode.join(''));
     // var fortuneWeUse = findSymbol(111111);
     console.log(fortuneWeUse[0].Name);
-    $('#overlay').show();
+    $('#overlay').fadeIn();
     $('#overlay').append("<h1>"+fortuneWeUse[0].Name+"</h1> <p>"+fortuneWeUse[0]['Hexagram Symbol']+"</p> <h3>"+fortuneWeUse[0].Reading+"</h3>");
     return; // reading complete
   }
@@ -129,7 +137,7 @@ Iching.prototype.onButtonClick = function(){
 
   line.element.html(this.templates[num]);
   line.value = num;
-
+  // $('#faders').fadeIn();
   this.counter--;
 
 };
@@ -138,7 +146,7 @@ Iching.prototype.onResetClick = function(){
   $('#overlay').empty();
   $('#overlay').append("<button id='overlayclose'>X</button>");
   $('#overlayclose').click(function(){
-    $('#overlay').hide();
+    $('#overlay').fadeOut();
   });
 
   this.counter = 6;

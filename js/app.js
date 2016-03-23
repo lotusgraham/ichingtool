@@ -624,28 +624,3 @@ function findSymbol(sym) {
 
   return result;
 }
-
-
-
-
-
-
-
-
-
-  // $('#listofstuff').submit(function(e){
-  //   e.preventDefault();
-  //     var userInput = $('#addstuff').val();
-  //     console.log(userInput);
-  //
-  //     $('#newitem').append('<li class="items">'+userInput+'</li>');
-  //     $('#addstuff').val('');
-  //   });
-  //
-  //
-  //     $('#addstuff').on ('click', function(){
-  //        $('#addstuff').val(' ');
-  //   });
-  //     $('#newitem').on('click', 'li.items', function() {
-  //       $(this).wrap("<strike>");
-  //     });

@@ -6,8 +6,6 @@ var newHexCode = [];
 
 $(document).ready(function () {
   // $('#overlay').hide();
-  // $('#startbutton').click(function(){
-  //   // alert('testing');
   $('#overlayclose').click(function(){
     $('#overlay').hide();
   });

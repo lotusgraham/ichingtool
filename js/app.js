@@ -135,7 +135,7 @@ Iching.prototype.onButtonClick = function(){
 
   var line = this.lines['line' + this.counter];
 
-  line.element.html(this.templates[num]);
+  line.element.html(this.templates[num]).hide().fadeIn('slow');
   line.value = num;
   // $('#faders').fadeIn();
   this.counter--;

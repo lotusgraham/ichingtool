@@ -61,7 +61,14 @@ font-size: 10rem;
 opacity:.8;
 margin:0;
 }
-
+button{
+  display: flex;
+  flex-direction: column;
+}
+.dragon {
+  height: 100px;
+  width: 200px;
+}
 body{
   background: url(../images/bg.jpg) no-repeat center center fixed;
 }

@@ -10,6 +10,13 @@ $(document).ready(function () {
     $('#overlay').hide();
   });
 
+  $('#resetbutton').click(function(){
+    $('#startbutton').fadeIn()
+  })
+
+
+
+
     var iching = window.iching = new Iching();
     num = iching.generateNumber();
     console.log(iching);
@@ -122,6 +129,7 @@ Iching.prototype.onButtonClick = function(){
     console.log(fortuneWeUse[0].Name);
     $('#overlay').fadeIn();
     $('#overlay').append("<h1>"+fortuneWeUse[0].Name+"</h1> <p>"+fortuneWeUse[0]['Hexagram Symbol']+"</p> <h3>"+fortuneWeUse[0].Reading+"</h3>");
+    $('#startbutton').hide();
     return; // reading complete
   }
 
@@ -183,7 +191,7 @@ var iChingOverlay =
     "Hexagram Symbol": "䷁",
     "Number": 2,
     "Name": "K'un / The Receptive",
-    "Reading": "This hexagram is made up of broken lines only. The broken lines represents the dark, yielding, receptive primal power of yin. The attribute of the hexagram is devotion; its image is the earth. It is the perfect complement of The Creative the complement, not the opposite, for the Receptive does not combat the Creative but completes it . It represents nature in contrast to spirit, earth in contrast to heaven, space as against time, the female-maternal as against the male-paternal. However, as applied to human affairs, the principle of this complementary relationship is found not only in the relation between man and woman, but also in that between prince and minister and between father and son. Indeed, even in the individual this duality appears in the coexistence of the spiritual world and the world of the senses. But strictly speaking there is no real dualism here, because there is a clearly defined hierarchic relationship between the two principles. In itself of course the Receptive is just as important as the Creative, but the attribute of devotion defines the place occupied by this primal power in relation to the Creative. For the Receptive must be activated and led by the Creative; then it is productive of good. Only when it abandons this position and tries to stand as an equal side by side with the Creative, does it become evil. The result then is opposition to and struggle against the Creative, which is productive of evil to both."
+    "Reading": "This hexagram is made up of broken lines only. The broken lines represents the dark, yielding, receptive primal power of yin. The attribute of the hexagram is devotion; its image is the earth. It is the perfect complement of The Creative the complement, not the opposite, for the Receptive does not combat the Creative but completes it . It represents nature in contrast to spirit, earth in contrast to heaven, space as against time, the female-maternal as against the male-paternal. However, as applied to human affairs, the principle of this complementary relationship is found not only in the relation between man and woman, but also in that between prince and minister and between father and son. Indeed, even in the individual this duality appears in the coexistence of the spiritual world and the world of the senses. But strictly speaking there is no real dualism here, because there is a clearly defined hierarchic relationship between the two principles. In itself of course the Receptive is just as important as the Creative, but the attribute of devotion defines the place occupied by this primal power in relation to the Creative. "
   },
   {
     "Generated Number": 122212,
